@@ -1,0 +1,213 @@
+
+@font-face {
+    font-family: gamePlay;
+    src: url('./Gameplay.ttf');
+}
+
+html,body{
+    height: 100%;
+    background-color:rgb(10, 10, 10);
+    border: 0px;
+    margin: 0px;
+    
+}
+
+#website{
+    height: 100%;
+}
+
+#navbar{
+    width: 100%;
+    height: 70px;
+    margin-top:0%;
+    display: flex;
+    flex-direction: row;
+    font-family:gamePlay;
+    background-color: rgb(10, 10, 10);
+    color:whitesmoke;
+    justify-content: left;
+    vertical-align: middle;
+    margin-bottom: 30px;
+}
+
+#navbar img{
+    margin-top: 15px;
+    margin-left: 20px;
+    height: 50px;
+}
+
+#title1{
+    margin-left: 10px;
+}
+
+#login{
+    position: absolute;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-family: monospace;
+}
+
+.loginlink{
+    border: 3px solid #57ffc4;
+    padding: 7px;
+    border-radius: 5%;
+    margin-right: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.loginlink:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    background-color: #57ffc4;
+    color: black;
+}
+
+#language{
+    margin-right: 20px;
+    background-color: black;
+    border: 3px solid #57ffc4;
+    color: white;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+
+#main-body{
+    padding-top: 5px;
+    display: flex;
+    height: 50%;
+}
+
+#editor{
+    display: flex;
+    height: 100%;
+    width: 70%;
+    font-size: 1rem;
+    background-color: black;
+    border:1px solid #113227;
+}   
+
+#stdin{
+    outline: none;
+    box-shadow: none;
+    resize: none;
+    color: white;
+    display: flex;
+    height: 100%;
+    width: 30%;
+    font-size: 1rem;
+    background-color: black;
+    border:3px solid #3eb68e;
+    border-radius: 2px;
+}
+
+#input-output-bar-1{
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    font-size: 1.2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-right: 10px;
+    border-right: 2px solid black;
+}
+
+#file-name{
+
+    background-color: black;
+    color: white;
+    width: fit-content;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #113227;
+}
+
+#inputtext{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+    background-color: black;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #113227;
+    margin-left: -15px;
+}
+
+#input-output-bar-2{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    font-size: 1.2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+#output-heading{
+    margin-top: 10px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+}
+
+.clear{
+    cursor: pointer;
+    border:#00462f;
+    outline: none;
+    height: 30px;
+    width: 80px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+    background-color:#57ffc4;
+    border-radius: 5%;
+    color: black;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+#input-output-bar{
+    width: 100%;
+    height: 40px;
+    background-color: #00432c;
+    display: flex;
+}
+
+.input{
+    border-color: #113227;
+    border-top: black;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    resize: none;
+    outline: none;
+    color: #ffffff;
+    font-family: monospace;
+    font-size:1rem;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.output{
+    padding: 0px;
+    margin: 0px;
+    border-color: #113227;
+    background-color: rgb(0, 0, 0);
+    width: calc(100% - 12px);
+    height: 20%;
+    resize: none;
+    outline: none;
+    color: #ffffff;
+    font-family: monospace;
+    font-size:1rem;
+    padding-left: 10px;
+    padding-top: 10px;
+}

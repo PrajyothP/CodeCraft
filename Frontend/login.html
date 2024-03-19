@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="register.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="center">
+            <h1>Login</h1>
+            <form>
+                <div class="txt_field">
+                    <input type="text" name="email" id="email" required>
+                    <span></span>
+                    <label>Gmail ID</label>
+                </div>
+                <div class="txt_field">
+                    <input type="password" name="password" id="password" required>
+                    <span></span>
+                    <label>Password</label>
+                </div>
+                <button id = "login" class="login">Login</button>
+                <br>
+                <div class="signup_link">
+                    Don't have an Account ? <br>
+                    <h3> <a href="register.html" style="color: white;">Register Here</a></h3>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src = "./FrontendJs/login.js"></script>
+</body>
+</html>

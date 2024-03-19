@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Register</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="register.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="center">
+          <h1>Register</h1>
+          <form >
+              <div class="txt_field">
+                  <input id = "name" type="text" name="name" autocomplete="off" required>
+                  <span></span>
+                  <label for="name">Name</label>
+              </div>
+              <div class="txt_field">
+                  <input type="text" name="email" id="email"  autocomplete="off" required>
+                  <span></span>
+                  <label for="email">Email</label>
+              </div>
+              <div class="txt_field">
+                  <input type="password" name="password" id="password" required>
+                  <span></span>
+                  <label for="password">Password</label>
+              </div>
+              <div class="txt_field">
+                  <input type="password" name="cpassword" id="cpassword" required>
+                  <span></span>
+                  <label for="cpassword">Confirm Password</label>
+              </div>
+              <button id ="Register" type="submit" class="login">Register</button>
+              <br>
+              <div class="signup_link">
+                  Have an Account ? <br>
+                  <h3> <a href="login.html" style="color: white;">Login Here</a></h3>
+              </div>
+          </form>
+      </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./FrontendJs/registerPage.js"></script>
+  </body>
+</html>

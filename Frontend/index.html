@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./indexstyle.css">
+    <link rel="icon" type="image/x-icon" href="./logo.png">
+    <title>CodeCraft</title>
+</head>
+<body>
+    <div id="website">
+        <div id="navbar">
+            <img src="./logo.png" alt="logo">
+            <h1 id="title1">Online Compiler</h1>
+            <div id="login">
+                <select name="language" id="language">
+                    <option value="C++">C++</option>
+                    <option value="Java">Java</option>
+                    <option value="Python">Python</option>
+                    <option value="C">C</option>
+                </select>
+                <a href="./login.html" class="loginlink">Log In</a>
+                <a href="./register.html" class="loginlink">Sign Up</a>
+                <a class="loginlink" id = 'logout'>Logout</a>
+            </div>
+        </div>
+        <div id="input-output-bar">
+            <div id="input-output-bar-1">
+                <div id="file-name">main.cpp</div>
+                <div id="save">
+                    <button class="clear" id="loadbtn">Load</button>
+                    <button class="clear" id = "savebtn">Save</button>
+                    <button id = "Run"class="clear">Run</button>
+                </div>
+            </div>
+            <div id="inputtext">Input</div>
+        </div>
+        <div id="main-body">
+            <div id="editor" class="input">#include &ltiostream&gt
+using namespace std;
+
+int main() 
+{
+    cout << "Hello, World!";
+    return 0;
+}</div>
+        <textarea id="stdin"></textarea>
+        </div>
+        <div id="input-output-bar" style="margin-top: 12px;">
+            <div id="input-output-bar-2">
+                <div id="output-heading">Output</div>
+                <button id = "clr" class="clear">Clear</button>
+            </div>
+        </div>
+        <textarea id="output"class="output" >$</textarea>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./ace-builds-master/src-min/ace.js"></script>
+    <script src="./FrontendJs/main.js"></script>
+    <script src = "FrontendJs/SaveAndLoad.js"></script>
+</body>
+</html>

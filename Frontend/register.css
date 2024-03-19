@@ -1,0 +1,137 @@
+@font-face {
+    font-family: gamePlay;
+    src: url('./Gameplay.ttf');
+}
+
+* {
+    box-sizing: border-box;
+    margin: auto;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000000;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.center {
+    background-color: #000000;
+    border: 5px solid #49cfa2;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+h1 {
+    margin-left: 20px;
+    font-family: fantasy;
+    font-size: 200%;
+    font-weight: bolder;
+    text-align: center;
+    letter-spacing: 5px;
+    color: white;
+
+}
+h3 {
+    margin-left: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 100%;
+    font-weight: bolder;
+    text-align: center;
+    letter-spacing: 5px;
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.txt_field {
+    position: relative;
+    margin: 25px 0;
+}
+
+.txt_field input {
+    border: none;
+    border-bottom: 2px solid #49cfa2;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    width: 100%;
+    padding: 0 5px;
+    font-size: 16px;
+    color: white;
+    font-family: monospace;
+}
+
+.txt_field span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #49cfa2;
+    transition: 0.5s;
+}
+
+.txt_field input:focus ~ span::before {
+    background: #49cfa2;
+}
+
+.txt_field label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.txt_field input:valid ~ label,
+.txt_field input:focus ~ label {
+    top: -15px;
+    font-size: 16px;
+    color: #49cfa2;
+    
+}
+
+.login {
+    background-color: #49cfa2;
+    color: black;
+    font-family: monospace;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.login:hover {
+    transition: 0.5s;
+    background-color: black;
+    color: #49cfa2;
+    border: 1px solid #49cfa2;
+}
+
+.signup_link a {
+    color: white;
+    text-decoration: none;
+}
+
+.signup_link a:hover {
+    text-decoration: underline;
+}
+
+.signup_link{
+    color: white;
+}
